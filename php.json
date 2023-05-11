@@ -1,0 +1,360 @@
+{
+	"addText": {
+		"prefix": [
+			"add-text"
+		],
+		"body": [
+			"->addText('${1:field_slug}', [",
+			"    'label'     => '${2:Label}',",
+			"])"
+		],
+		"description": "ACF Builder Text field"
+	},
+	"addTextarea": {
+		"prefix": [
+			"add-textarea"
+		],
+		"body": [
+			"->addTextarea('${1:field_slug}', [",
+			"    'label'     => '${2:Label}',",
+			"    'rows'      => '${3:2}',",
+			"    'new_lines' => '${4:br}',",
+			"])"
+		],
+		"description": "ACF Builder Textarea field"
+	},
+	"addNumber": {
+		"prefix": [
+			"add-number"
+		],
+		"body": [
+			"->addNumber('${1:field_slug}', [",
+			"    'label'    => '${2:Label}',",
+			"    'min'      => ${3:0},",
+			"    'max'      => ${4:100},",
+			"    'step'     => ${5:1},",
+			"])"
+		],
+		"description": "ACF Builder Number field"
+	},
+	"addEmail": {
+		"prefix": [
+			"add-email"
+		],
+		"body": [
+			"->addEmail('${1:field_slug}', [",
+			"    'label'    => '${2:Email Address}',",
+			"])"
+		],
+		"description": "ACF Builder Email field"
+	},
+	"addUrl": {
+		"prefix": [
+			"add-url"
+		],
+		"body": [
+			"->addUrl('${1:field_slug}', [",
+			"    'label'      => '${2:URL}',",
+			"])"
+		],
+		"description": "ACF Builder URL field"
+	},
+	"addWysiwyg": {
+		"prefix": [
+			"add-editor"
+		],
+		"body": [
+			"->addWysiwyg('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'toolbar'      => '${3:basic}', // basic, full",
+			"    'media_upload' => '${4:0}', // 0, 1",
+			"])"
+		],
+		"description": "ACF Builder Wysiwyg field"
+	},
+	"addImage": {
+		"prefix": [
+			"add-image"
+		],
+		"body": [
+			"->addImage('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'preview_size' => '${4:medium}', // thumbnail, medium, large",
+			"])"
+		],
+		"description": "ACF Builder Image field"
+	},
+	"addGallery": {
+		"prefix": [
+			"add-gallery"
+		],
+		"body": [
+			"->addGallery('${1:field_slug}', [",
+			"    'label'        => '${2:Gallery}',",
+			"])"
+		],
+		"description": "ACF Builder Gallery field"
+	},
+	"addOembed": {
+		"prefix": [
+			"add-oembed"
+		],
+		"body": [
+			"->addOembed('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"])"
+		],
+		"description": "ACF Builder Oembed field"
+	},
+	"addFile": {
+		"prefix": [
+			"add-file"
+		],
+		"body": [
+			"->addFile('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'mime_types'   => '',", 
+			"])"
+		],
+		"description": "ACF Builder File field"
+	},
+	"addSelect": {
+		"prefix": [
+			"add-select"
+		],
+		"body": [
+			"->addSelect('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'multiple'     => 0,",
+			"    'ui'           => 0,",
+			"    'ajax'         => 0,",
+			"    'choices'      => [",
+			"        'value'    => 'Name',",
+			"    ],",
+			"])"
+		],
+		"description": "ACF Builder Choice/Select field"
+	},
+	"addCheckbox": {
+		"prefix": [
+			"add-checkbox"
+		],
+		"body": [
+			" ->addCheckbox('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'layout'       => 'horizontal',",
+			"    'choices'      => [",
+			"        'value'    => 'Name',",
+			"    ],",
+			"])"
+		],
+		"description": "ACF Builder Checkbox field"
+	},
+	"addRadio": {
+		"prefix": [
+			"add-radio"
+		],
+		"body": [
+			"->addRadio('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'layout'       => 'horizontal',",
+			"    'choices'      => [",
+			"        'value'    => 'Name',",
+			"    ],",
+			"])"
+		],
+		"description": "ACF Builder Radio field"
+	},
+	"addTrueFalse": {
+		"prefix": [
+			"add-truefalse"
+		],
+		"body": [
+			"->addTrueFalse('${1:field_slug}', [",
+			"    'label'         => false,",
+			"    'message'       => '${2:Include Field}',",
+			"    'default_value' => 0,",
+			"])"
+		],
+		"description": "ACF Builder True/False field"
+	},
+	"addPostObject": {
+		"prefix": [
+			"add-postobject"
+		],
+		"body": [
+			"->addPostObject('${1:field_slug}', [",
+			"    'label'         => '${2:Label}',",
+			"    'post_type'     => [${3:'post'}],",
+			"    'return_format' => '${4|id,object|}',",
+			"])"
+		],
+		"description": "ACF Builder Post Object field"
+	},
+	"addRelationship": {
+		"prefix": [
+			"add-relationship"
+		],
+		"body": [
+			"->addRelationship('${1:field_slug}', [",
+			"    'label'         => '${2:Label}',",
+			"    'post_type'     => ['${3:post}'],",
+			"    'filters'       => ['search'], // search, post_type, taxonomy",
+			"    'return_format' => 'id',",
+			"])"
+		],
+		"description": "ACF Builder Relationship field"
+	},
+	"addTaxonomy": {
+		"prefix": [
+			"add-taxonomy"
+		],
+		"body": [
+			"->addTaxonomy('${1:field_slug}', [",
+			"    'label'         => '${2:Label}',",
+			"    'taxonomy'      => '${3:category}',",
+			"    'field_type'    => '${4|select,multi_select,checkbox,radio|}', // select, multi_select, checkbox, radio",
+			"    'allow_null'    => 0,",
+			"    'add_term'      => 1,",
+			"    'save_terms'    => 1,",
+			"    'load_terms'    => 1,",
+			"    'return_format' => 'object',",
+			"    'multiple'      => 0", 
+			"])"
+		],
+		"description": "ACF Builder Taxonomy field"
+	},
+	"addGoogleMap": {
+		"prefix": [
+			"add-googlemap"
+		],
+		"body": [
+			"->addGoogleMap('${1:field_slug}', [",
+			"    'label'      => '${2:Label}',",
+			"    'zoom'       => '',",
+			"])"
+		],
+		"description": "ACF Builder Google Map field"
+	},
+	"addDatePicker": {
+		"prefix": [
+			"add-datepicker"
+		],
+		"body": [
+			"->addDatePicker('${1:field_slug}', [",
+			"    'label'          => '${2:Label}',",
+			"    'display_format' => '${3:d/m/Y}', // https://wordpress.org/support/article/formatting-date-and-time/",
+			"    'return_format'  => '${4:d/m/Y}',",
+			"])"
+		],
+		"description": "ACF Builder Date Picker field"
+	},
+	"addDateTimePicker": {
+		"prefix": [
+			"add-datetimepicker"
+		],
+		"body": [
+			"->addDateTimePicker('${1:field_slug}', [",
+			"    'label'          => '${2:Label}',",
+			"    'display_format' => '${3:d/m/Y g:i a}', // https://wordpress.org/support/article/formatting-date-and-time/",
+			"    'return_format'  => '${4:d/m/Y g:i a}',",
+			"])"
+		],
+		"description": "ACF Builder Date Time Picker field"
+	},
+	"addTimePicker": {
+		"prefix": [
+			"add-timepicker"
+		],
+		"body": [
+			"->addTimePicker('${1:field_slug}', [",
+			"    'label'          => '${2:Label}',",
+			"    'display_format' => '${3:g:i a}', // https://wordpress.org/support/article/formatting-date-and-time/",
+			"    'return_format'  => '${4:g:i a}',", 
+			"])"
+		],
+		"description": "ACF Builder Time Picker field"
+	},
+	"addColorPicker": {
+		"prefix": [
+			"add-colorpicker"
+		],
+		"body": [
+			"->addColorPicker('${1:field_slug}', [",
+			"    'label'         => '${2:Label}',",
+			"    'default_value' => '${3:#000000}',",
+			"])"
+		],
+		"description": "ACF Builder Color Picker field"
+	},
+	"addRepeater": {
+		"prefix": [
+			"add-repeater"
+		],
+		"body": [
+			"->addRepeater('${1:field_slug}', [",
+			"    'label'        => '${2:Label}',",
+			"    'layout'       => 'block', // table, block, row",
+			"    'min'          => 1,",
+			"    'button_label' => 'Add Item',",
+			"    'collapsed'    => '',",
+			"])",
+			
+			"->endRepeater()"
+		],
+		"description": "ACF Builder Repeater field"
+	},
+	"addGroup": {
+		"prefix": [
+			"add-group"
+		],
+		"body": [
+			"->addGroup('${1:field_slug}', [",
+			"    'label'        => '${2:Button}',",
+			"])",
+			"",
+			"->endGroup()"
+		],
+		"description": "ACF Builder Group field"
+	},
+	"addFieldsBuilder": {
+		"prefix": [
+			"add-fieldsbuilder"
+		],
+		"body": [
+			"$${1:groupName} = new FieldsBuilder('${2:group_slug}', [",
+			"    'title'      => '${3:Group Title}',",
+			"    'position'   => 'acf_after_title',",
+			"    'menu_order' => 1,",
+			"]);",
+
+			"$${1:$groupName}",
+
+			"->setLocation('post_type', '==', '${5:associated_post_type}');",
+
+			"// Register Group",
+			"add_action('acf/init', function() use ($${1:groupName}) {",
+			"    acf_add_local_field_group($${1:groupName}->build());",
+			"});"
+		],
+		"description": "Fields Builder"
+	},
+	"addClone": {
+		"prefix": [
+			"add-clone"
+		],
+		"body": [
+			"->addFields(${1:HtmlAttributes}::getFields())"
+		],
+		"description": "Clone"
+	},
+	"addConditional": {
+		"prefix": [
+			"add-conditional"
+		],
+		"body": [
+			"->conditional('${1:key}', '==', '${2:value}')"
+		],
+		"description": "Conditional"
+	}
+}
